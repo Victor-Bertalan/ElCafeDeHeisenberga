@@ -1,0 +1,85 @@
+  .top{
+    background: url(../img/header-bg.jpg);
+    background-size: cover;
+    top:0px;
+    left:0px;
+    display:block;
+    position:absolute;
+    width:100vw;
+  }
+  .topcont{
+    color: white;
+  }
+
+  .topcont h6{
+    margin-bottom: 10px;
+  }
+
+  .topcont a{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    transition: ease-in-out 0.2s;
+  }
+
+  .topcont a:hover{
+    background-color: transparent;
+    color: white;
+  }
+
+@media only screen and (min-width: 601px){
+  .top{
+    height:115vh;
+  }
+  .topcont{
+    margin-left:20vw;
+    margin-top:40vh;
+    width:40vw;
+  }
+  .topcont h6{
+    font-size: 25px;
+    line-height: 20px;
+    font-size: 2vw;
+  }
+  .topcont h2{
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .topcont a{
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:15px;
+    font-size: 1vw;
+    padding-bottom: 15px;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .top{
+    height:80vh;
+  }
+  .topcont{
+    margin-left:15vw;
+    margin-top:20vh;
+    min-width:40vw;
+    max-width: 80vw;
+  }
+  .topcnt h6{
+    font-size: 15px;
+    line-height: 10px;
+  }
+  .topcont h2{
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .topcont a{
+    margin-top: 5vh;
+    width:max-content;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 35px;
+  }
+}

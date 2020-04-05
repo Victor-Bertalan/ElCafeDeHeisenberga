@@ -1,0 +1,204 @@
+body{
+  background: url(../img/tiles.png);
+}
+#top{
+  top:0px;
+  max-width:100vw;
+  width:100vw;
+}
+main {
+  width:100vw;
+  height:min-content;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+main>section>h2{
+  display:none;
+}
+section:not(#contact){
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 10px;
+  float: left;
+  width:100%;
+}
+section:not(#contact) div{
+  width:90vw;
+  font-size: 3vw;
+  color: var(--accent);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input[type=checkbox]{
+    display: none;
+}
+
+label{
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    border-right: solid 0.5vw var(--accent);
+    transition: ease-in-out 0.2s;
+    background-color: var(--main);
+    color: var(--accent);
+}
+input[type=checkbox]:checked label{
+  background: transparent;
+}
+
+label>i{
+  transition: ease-in-out 0.2s;
+}
+input[type=checkbox]:checked label>i{
+  transform: rotate(180deg);
+}
+
+section:not(#contact) input[type=checkbox]:checked~ul {
+  width:100%;
+}
+section:not(#contact) ul{
+  transition: ease-in-out 0.2s;
+  overflow: hidden;
+  display:flex;
+  padding-left: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: wrap;
+list-style: none;
+  width:0;
+}
+button{
+  background-color: transparent;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+  min-width: 15vw;
+  padding:10px;
+  background-color:var(--main);
+  transition: ease-in-out 0.2s;
+  text-align: left;
+  border: 5px solid var(--accent);
+}
+button::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: var(--main);
+    height: 10px;
+    right: 20%;
+    top: -5px;
+    transform: skewX(-45deg);
+    transition: all 0.45s ease;
+  }
+  button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: var(--main);
+    height: 10px;
+    left: 20%;
+    bottom: -5px;
+    transform: skewX(45deg);
+    transition: all 0.45s ease;
+  }
+  button:hover::before{
+    right: 80%;
+  }
+  button:hover::after{
+    left: 80%;
+  }
+  button .s1{
+  text-transform: uppercase;
+  display:block;
+  left:0px;
+  color: var(--accent);
+}
+
+  button .s2{
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+  color: var(--accent);
+  display:block;
+  font-weight: 300;
+}
+#cafele{
+  --main: rgba(60,0,0,0.8);
+  --accent: #B68834;
+}
+
+#ceaiuri{
+  --main: rgba(0,88,0,0.8);
+  --accent: #663300;
+}
+#sucuri{
+  --main: rgba(0,0,99,0.8);
+  --accent: #ff0066;
+}
+
+
+@media only screen and (min-width:601px){
+  body{
+    height:10vh;
+  }
+  label{
+    width:20vw;
+    padding:15vh 0;
+    font-size:2vw;
+  }
+  section:not(#contact) ul{
+    height:40vh;
+    max-height: 40vh;
+  }
+  button{
+    margin: 1.5vw;
+  }
+
+  button .s1{
+    font-size: 1.5vw;
+  }
+  button .s2{
+    font-size: 1vw;
+    float:right;
+  }
+}
+
+@media only screen and (max-width:600px){
+  label{
+    width:30vw;
+    padding:25vh 0;
+    font-size: 6vw;
+    word-spacing: 10vw;
+  }
+  section:not(#contact) ul{
+    max-height: 56vh;
+  }
+  button{
+    height:12.5vh;
+    margin: 0.75vh 1.5vw;
+    min-width:35vw;
+  }
+  button .s1{
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+  }
+  button .s2{
+    position: absolute;
+    margin: 0;
+    right:2vw;
+    bottom: 0;
+  }
+}

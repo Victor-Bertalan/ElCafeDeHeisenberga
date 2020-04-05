@@ -1,0 +1,123 @@
+
+  #reviews{
+    width:100vw;
+    height:min-content;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background:   linear-gradient(rgba(182, 136, 52, 1) 0%, rgba(182, 136, 52, 1) 65%, rgba(0, 0,0, 0) 100%);
+    top:70vh;
+  }
+
+  #reviews h2{
+    font-size: 4vw;
+    letter-spacing:0.3vw;
+    color:white;
+  }
+
+  #reviews .cont{
+    height:min-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #reviews .cont div{
+    display:inline-block;
+    color:white;
+  }
+
+  #reviews .cont h4{
+    font-size: 2.5vw;
+    display: inline-block;
+    margin-top:0px;
+  }
+
+  #reviews .star{
+    display:inline-block;
+    position: relative;
+    float:right;
+    font-size:2vw;
+  }
+
+  #reviews .cont h5{
+    margin-top:2vh;
+    letter-spacing: 0.1vw;
+  }
+
+  #reviews ul{
+    display:flex;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    color:white;
+    margin-bottom: 10vh;
+  }
+
+  #reviews li{
+    margin:0 5vw;
+    display: flex;
+    min-width: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #reviews li h5{
+    font-size:2.5vw;
+    letter-spacing: 0.1vw;
+    font-weight: 100;
+    margin-bottom: 2vh;
+  }
+
+  #reviews li h4{
+    margin-top:0;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+  }
+
+@media only screen and (min-width: 601px){
+  #reviews{
+    left:-10px;
+    top:105vh;
+  }
+  #reviews .cont{
+    width:95vw;
+  }
+  #reviews .cont div{
+    margin:0 5vh;
+  }
+  #reviews .cont h5{
+    font-size:1.5vw;
+  }
+  #reviews li h4{
+    font-size:1.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #reviews .cont{
+    width:90vw;
+  }
+  #reviews .cont>div{
+    margin:0 2vw;
+  }
+  #reviews .cont h5{
+    font-size:2.5vw;
+  }
+  #reviews .star{
+    margin-top:1vh;
+  }
+  #reviews li h4{
+    font-size:2vw;
+  }
+  #reviews li{
+    box-sizing: border-box;
+    width:40vw;
+  }
+}

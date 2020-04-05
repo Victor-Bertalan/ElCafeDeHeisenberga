@@ -1,0 +1,54 @@
+  #contact{
+    background: url(../img/footer-bg.jpg);
+    background-size: cover;
+    display:flex;
+    width:100vw;
+    position:relative;
+    color:white;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2vw;
+    top:70vh;
+  }
+
+
+
+  #contact a{
+    text-decoration: none;
+    color:white;
+    transition: ease-in-out 0.3s;
+  }
+
+  #contact div ul{
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding:0;
+  }
+
+  #contact div i{
+    font-size: 3vw;
+    transition: ease-in-out 0.3s;
+  }
+
+  #contact a:hover, #contact i:hover{
+    transform: scale(1.1);
+    color:#B68834;
+  }
+
+@media only screen and (min-width: 601px){
+#contact{
+  top:105vh;
+  height:70vh;
+  left:-10px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+#contact{
+  height:30vh
+}
+
+}

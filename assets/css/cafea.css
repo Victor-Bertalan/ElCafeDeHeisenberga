@@ -1,0 +1,95 @@
+#cafea{
+  background: url(../img/frunze.png);
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  top:70vh;
+}
+
+#cafea h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #B68834;
+  font-weight: 300;
+}
+
+#cafea h3{
+  color: #777777;
+  font-weight: 300;
+  line-height: 1.625em;
+}
+
+@media only screen and (min-width: 601px){
+  #cafea{
+    top:105vh;
+    left:-10px;
+  }
+  #cafea h2{
+      font-size: 3vw;
+  }
+  #cafea h3{
+      font-size: 1.5vw;
+  }
+  #cafea .grid{
+    display: grid;
+    grid-template-areas:
+      'img1 img2 img2 '
+      'img1 img2 img2'
+      'img3 img2 img2'
+      'img3 img4 img5'
+      'img3 img4 img5';
+    grid-gap: 20px;
+    width:90vw;
+    height:115vh;
+  }
+
+  .img1{
+  grid-area: img1;
+  }
+  .img2{
+  grid-area: img2;
+  }
+  .img3{
+  grid-area: img3;
+  }
+  .img4{
+  grid-area: img4;
+  }
+  .img5{
+  grid-area: img5;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #cafea{
+      padding: 3vh 0 0 0;
+    }
+
+    #cafea h2{
+      font-size: 5vw;
+    }
+
+    #cafea h3{
+      font-size: 4vw;
+    }
+
+    #cafea .grid{
+      border-spacing:30px;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      width:90vw;
+    }
+
+
+    .img1,.img2,.img3,.img4,.img5{
+      width:100%;
+      height:40vh;
+      margin:2vh 0;
+      display: block;
+    }
+}

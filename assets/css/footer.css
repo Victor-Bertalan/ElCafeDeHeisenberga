@@ -1,0 +1,41 @@
+
+#contact{
+  background: rgba(60,0,0,0.8);
+  width:100vw;
+  height:20vh;
+  color:white;
+  font-size: 2vw;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#contact a{
+  text-decoration: none;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+#contact div ul{
+
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding:0;
+}
+
+#contact div i{
+  font-size: 3vw;
+  transition: ease-in-out 0.3s;
+}
+#contact a:hover, #contact i:hover{
+  transform: scale(1.1);
+  color:#B68834;
+}
+
+@media only screen and (max-width: 600px){
+  #contact{
+    height:10vh;
+  }
+}
