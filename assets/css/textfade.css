@@ -1,0 +1,13 @@
+
+span{
+    opacity:0;
+    transform:translateY(-50px);
+    display: inline;
+    transition: ease-in-out 0.4s;
+}
+
+span.fade{
+    opacity:1;
+    transition: ease-in-out 0.4s;
+    transform:translateY(0px);
+}

@@ -20,6 +20,19 @@
     border: 1px solid white;
     color: black;
     transition: ease-in-out 0.2s;
+    animation: fade 2.5s;
+  }
+
+  @keyframes fade{
+    0%{
+      opacity:0;
+    }
+    90%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
   }
 
   .topcont a:hover{
