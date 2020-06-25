@@ -1,3 +1,5 @@
+
+function textFade(x){
 const text=document.querySelectorAll(".fancy");
 for(let i=0;i<text.length;i++){
     strtext=text[i].textContent;
@@ -11,7 +13,7 @@ for(let i=0;i<text.length;i++){
     }  
 
     let char=0;
-    let timer=setInterval(onTick, 1000/3);
+    let timer=setInterval(onTick, x/3);
 
     function onTick(){
     const span=text[i].querySelectorAll('span')[char];
@@ -25,4 +27,4 @@ for(let i=0;i<text.length;i++){
     }
     
 }
-
+}
