@@ -24,7 +24,6 @@ function timerIncrement() {
           timp.innerHTML = idleTime;
           div.classList.add("viz");
           console.log(timp.classList);
-          console.log("Ma fut in sus");
         }
     }
 }
