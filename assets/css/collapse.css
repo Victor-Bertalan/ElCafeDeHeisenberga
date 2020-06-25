@@ -1,0 +1,59 @@
+.collapsed{
+    max-height:100px;
+    overflow-y:hidden;
+    transition:ease 1s;
+    position: relative;
+}
+
+.over{
+    background-color: rgba(255,255,255,0.5);
+    color:black;
+    position: absolute !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    top:0;
+    left:0;
+    z-index: 2;
+    width:100vw !important;
+    height:100px !important;
+    display:block;
+    margin: 0 !important;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.butcol{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    transition: ease-in-out 0.2s;
+    animation: fade 1.5s;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    font-size: 1vw;
+    padding-bottom: 15px;
+}
+
+.butcol:hover{
+    background-color: transparent;
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+
+    
+.butcol{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 4.5vw;
+    display: block;
+    margin-top: 2vh;
+}
+
+.over{
+    font-size: 4.5vw;
+}
+}
