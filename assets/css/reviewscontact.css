@@ -5,10 +5,11 @@ main{
 
 main>div{
   display: inline-flex;
+  padding:10vh 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:100vw;
+  width:50vw;
   height:100vh;
   font-size: 1rem;
   background-color: var(--main--);
@@ -18,12 +19,19 @@ main>div{
 }
 
 .d1{
+  --main--:#B68834;
+  --accent--:rgba(80,00,00,1);
+  --shadowlight--:#c79538;
+  --shadowdark--:#634a1c;
+}
+
+.d2{
   --accent--:#B68834;
   --main--:rgba(80,00,00,1);
   --shadowlight--:#660000;
   --shadowdark--:#330000;
+    right:0px;
 }
-
 
 h2{
   text-transform: uppercase;
@@ -31,12 +39,12 @@ h2{
   font-weight: 100;
 }
 
-form:not(#login){
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding:15vh 5vw;
   width:45vw;
-  height:60vh;
   box-sizing: border-box;
   border-radius: 5vw;
   box-shadow: 10px 10px 8px var(--shadowdark--), -10px -10px 8px var(--shadowlight--);
@@ -45,7 +53,7 @@ form:not(#login){
   font-size: 1.5vw;
 }
 
-input[type="text"],input[type="password"], input[type="number"]{
+input[type="text"]{
   background-color: var(--main--);
   display: block;
   width:80%;
@@ -58,28 +66,41 @@ input[type="text"],input[type="password"], input[type="number"]{
   box-shadow: inset 5px 5px 10px var(--shadowdark--), inset -5px -5px 10px var(--shadowlight--);
 }
 
-form:not(#login) input:focus, textarea:focus{
+input:focus, textarea:focus{
   box-shadow: none;
   outline: none;
 }
 
-form:not(#login) label{
-  display:flex;
-  height:30%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form:not(#login) input:not([type="radio"]), textarea{
+input:not([type="radio"]), textarea{
   transition: ease-in-out 0.5s;
 }
-form:not(#login)>input{
+div>input{
   position: absolute;
   opacity: 0;
   z-index: 3;
   width:2vw;
   height:2vw;
+}
+
+label i{
+  color:var(--shadowlight--);
+}
+
+input:checked~label i{
+  color: var(--accent--);
+}
+
+
+input:hover~label i{
+    color:var(--accent--);
+}
+
+form div{
+  transform: rotate(180deg);
+}
+
+form div i{
+  transform: rotate(180deg);
 }
 
 textarea{
@@ -111,21 +132,21 @@ textarea::-webkit-scrollbar-thumb:hover {
   background: var(--shadowlight--);
 }
 
-form:not(#login) input[type="submit"]{
+input[type="submit"]{
   background-color: var(--accent--);
   border: 1px solid var(--accent--);
-  display: block;
   min-width:35%;
+  margin-top:10%;
   padding:1vh 2.5vw;
   border-radius: 5vw;
   color: var(--main--);
   transition: ease-in-out 0.2s;
   text-transform: uppercase;
   letter-spacing: 0.4vh;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
-form:not(#login) input[type="submit"]:hover{
+input[type="submit"]:hover{
     background-color: transparent;
     color:var(--accent--);
 }
@@ -149,11 +170,11 @@ form:not(#login) input[type="submit"]:hover{
   textarea{
     font-size: 2.5vw;
   }
-  form:not(#login) input[type="text"]{
+  input[type="text"]{
     font-size:2.5vw;
     padding: 1vh 5%;
   }
-  form:not(#login) input[type="submit"]{
+  input[type="submit"]{
     font-size: 3vw;
     padding:1.5vh 5.5vw;
     border-radius: 10vw;
