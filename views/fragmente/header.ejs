@@ -1,0 +1,57 @@
+<header>
+  <script src="js/timp.js"></script>
+  <script src="js/nrcuv.js"></script>
+    <img src="img/logo1.png" alt="404 logo not found">
+    <nav>
+      <i class="fas fa-bars"></i>
+      <ul>
+        <li class="dd">
+          Acasa
+          <ul class="ddcontent">
+            <li><a href="index#top">Home</a></li>
+            <li><a href="index#despre">Despre noi</a></li>
+            <li><a href="index#cafea">Cafeaua noastra</a></li>
+            <li><a href="index#reviews">Parerile clientilor</a></li>
+          </ul>
+        </li>        
+        <li><a href="galerie">Galerie photo</a></li>
+        <li><a href="magazin">Magazin</a></li>
+        <li><a href="form">Intregistreaza-te</a></li>
+        <li>
+          <div>
+            <% if(!locals.username){%>
+            <form id="login" method="post" action="/login" >
+              
+              <label>
+              
+                <div class="textbox">
+                
+                <input id="i_text" type="text" placeholder="Username" name="username" value="">
+                </div>
+              </label>
+              
+        
+              <label>
+              
+                <div class="textbox">
+                
+                <input id="i_parola" type="password" placeholder="Password" name="parola" value="">
+                </div>
+              </label>
+            
+              <input class="sub" type="submit" value="Login">
+            </form> 
+            <%} else {%>
+              <br>
+              Te-ai logat cu: <%= locals.username %>
+              <br>
+              <a href="/logout"> Logout</a>
+            <%} %>
+        </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="x">
+    <i class="fas fa-times"></i>
+    </div>
+</header>

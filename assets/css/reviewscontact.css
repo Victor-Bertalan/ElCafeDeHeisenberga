@@ -5,11 +5,10 @@ main{
 
 main>div{
   display: inline-flex;
-  padding:10vh 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:50vw;
+  width:100vw;
   height:100vh;
   font-size: 1rem;
   background-color: var(--main--);
@@ -19,19 +18,12 @@ main>div{
 }
 
 .d1{
-  --main--:#B68834;
-  --accent--:rgba(80,00,00,1);
-  --shadowlight--:#c79538;
-  --shadowdark--:#634a1c;
-}
-
-.d2{
   --accent--:#B68834;
   --main--:rgba(80,00,00,1);
   --shadowlight--:#660000;
   --shadowdark--:#330000;
-    right:0px;
 }
+
 
 h2{
   text-transform: uppercase;
@@ -39,12 +31,12 @@ h2{
   font-weight: 100;
 }
 
-form{
+form:not(#login){
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:15vh 5vw;
   width:45vw;
+  height:60vh;
   box-sizing: border-box;
   border-radius: 5vw;
   box-shadow: 10px 10px 8px var(--shadowdark--), -10px -10px 8px var(--shadowlight--);
@@ -53,7 +45,7 @@ form{
   font-size: 1.5vw;
 }
 
-input[type="text"]{
+input[type="text"],input[type="password"], input[type="number"]{
   background-color: var(--main--);
   display: block;
   width:80%;
@@ -66,41 +58,28 @@ input[type="text"]{
   box-shadow: inset 5px 5px 10px var(--shadowdark--), inset -5px -5px 10px var(--shadowlight--);
 }
 
-input:focus, textarea:focus{
+form:not(#login) input:focus, textarea:focus{
   box-shadow: none;
   outline: none;
 }
 
-input:not([type="radio"]), textarea{
+form:not(#login) label{
+  display:flex;
+  height:30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form:not(#login) input:not([type="radio"]), textarea{
   transition: ease-in-out 0.5s;
 }
-div>input{
+form:not(#login)>input{
   position: absolute;
   opacity: 0;
   z-index: 3;
   width:2vw;
   height:2vw;
-}
-
-label i{
-  color:var(--shadowlight--);
-}
-
-input:checked~label i{
-  color: var(--accent--);
-}
-
-
-input:hover~label i{
-    color:var(--accent--);
-}
-
-form div{
-  transform: rotate(180deg);
-}
-
-form div i{
-  transform: rotate(180deg);
 }
 
 textarea{
@@ -132,21 +111,21 @@ textarea::-webkit-scrollbar-thumb:hover {
   background: var(--shadowlight--);
 }
 
-input[type="submit"]{
+form:not(#login) input[type="submit"]{
   background-color: var(--accent--);
   border: 1px solid var(--accent--);
+  display: block;
   min-width:35%;
-  margin-top:10%;
   padding:1vh 2.5vw;
   border-radius: 5vw;
   color: var(--main--);
   transition: ease-in-out 0.2s;
   text-transform: uppercase;
   letter-spacing: 0.4vh;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
-input[type="submit"]:hover{
+form:not(#login) input[type="submit"]:hover{
     background-color: transparent;
     color:var(--accent--);
 }
@@ -170,11 +149,11 @@ input[type="submit"]:hover{
   textarea{
     font-size: 2.5vw;
   }
-  input[type="text"]{
+  form:not(#login) input[type="text"]{
     font-size:2.5vw;
     padding: 1vh 5%;
   }
-  input[type="submit"]{
+  form:not(#login) input[type="submit"]{
     font-size: 3vw;
     padding:1.5vh 5.5vw;
     border-radius: 10vw;

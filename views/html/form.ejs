@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta name="author" content="Bertalan Victor">
+    <meta name="keywords" content="cafea, cafenea, review, conact, rating, relatia cu clientii">
+    <meta name="description" content="Un formular facut pentru a avea destul feedback incat sa stim ce sa pastram si sa imbunatatim si ce ttrebuie schimbat">
+    <link rel="stylesheet" href="css/general.css" type="text/css">
+    <link rel="stylesheet" href="css/reviewscontact.css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/afk.css" type="text/css">
+    <script src="js/afk.js"></script>
+    <link rel="shortcut icon" href="img/logo1.png">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Los revision & contacto de Heisenberga</title>
+  </head>
+  <body>
+    <%-  include('../fragmente/header')  %> 
+    <main>
+      <div class="d1">
+        <h2>Inregistreaza-te</h2>
+        <form class="" action="/inreg" method="post">
+            <label>
+              Nume:
+              <br>
+              <input type="text" name="username" value="">
+            </label>
+            <label>
+              Parola: 
+              <br>
+              <input type="password" name="parola" value="">
+            </label>
+            <label >Varsta (7-70):
+              <br>
+              <input type="number" id="tentacles" name="varsta"  min="7" max="70">
+            </label>
+            <label><input type="submit" value="Submit"></label>
+        </form>
+      </div>
+    </main>
+    <div class="afk">Ati fost inactiv timp de &nbsp<div class="time"></div> &nbsp minute</div>
+  </body>
+</html>

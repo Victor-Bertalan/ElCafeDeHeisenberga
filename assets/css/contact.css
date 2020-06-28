@@ -5,13 +5,18 @@
     width:100vw;
     position:relative;
     color:white;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
     font-size: 2vw;
     top:70vh;
+    flex-wrap: wrap;
   }
 
-
+  .f1, .f2{
+  
+    width:100vw;
+    text-align: center;
+  }
 
   #contact a{
     text-decoration: none;

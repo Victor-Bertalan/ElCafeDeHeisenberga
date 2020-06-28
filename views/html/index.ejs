@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ro" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta name="author" content="Bertalan Victor">
+    <meta name="keywords" content="cafea, cafenea, raportul calitate-pret, magazin, cafea neagra">
+    <meta name="description" content="O cafenea in care accentul se pune pe calitate, grija, si dragostea pentru cafea, dar mai ales pe relatia noastra cu clientii">
+    <script src="js/textfade.js"></script>
+    <link rel="stylesheet" href="css/afk.css" type="text/css">
+    <script src="js/afk.js"></script>
+    <link rel="stylesheet" href="css/collapse.css" type="text/css">
+    <script src="js/collapse.js"></script>
+    <link rel="stylesheet" href="css/general.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/topcont.css" type="text/css">
+    <link rel="stylesheet" href="css/despre.css" type="text/css">
+    <link rel="stylesheet" href="css/cafea.css" type="text/css">
+    <link rel="stylesheet" href="css/reviews.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/textfade.css" type="text/css">
+    <link rel="shortcut icon" href="img/logo1.png">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>El cafe de Heisenberga</title>
+  </head>
+  <body>
+
+    <main>
+    <%-  include('../fragmente/header')  %> 
+      <section class="top">
+        <div class="topcont">
+          <h6>Incearca cafeaua noastra</h6>
+          <h2 class="fancy">Cumpara o cafea neagra proaspata acum!</h2>
+          <a href="magazin.html#magazin">CUMPARA ACUM</a>
+          <button class="butcol" onclick="collapse()"> Collapse</button>
+        </div>
+      </section>
+      <section id="despre">
+        <img src="img/coffeemaking.jpg" alt="Error 404 Coffee not found">
+        <div>
+          <h6>Viziunea noastra</h6>
+            <article>
+              <h3 class="fancy">
+            La El cafe de Heisenberga accentul cade atât pe raportul calitate-preț, cât și pe oamenii care fac parte din povestea noastră. Atât francizaţii, cât şi barista El cafe de Heisenberga sunt o resursă esenţială pentru noi şi constituie cheia succesului, reuşind să împartă, zi de zi, câte un zâmbet tuturor celor care trec pragul locaţiilor noastre.
+              </h3>
+            </article>
+        </div>
+      </section>
+      <section id="cafea">
+        <h2>Ce fel de cafea va servim</h2>
+        <h3>O cafea facuta cu drag si multa grija</h3>
+        <div class="grid">
+          <div style="background: url(img/tab1.jpg); background-size: cover;" class="img1"></div>
+          <div style="background: url(img/tab2.jpg); background-size: cover;" class="img2"></div>
+          <div style="background: url(img/tab3.jpg); background-size: cover;" class="img3"></div>
+          <div style="background: url(img/tab4.jpg); background-size: cover;" class="img4"></div>
+          <div style="background: url(img/tab5.jpg); background-size: cover;" class="img5"></div>
+        </div>
+      </section>
+      <section id="reviews">
+        <h2>Parerile clientilor</h2>
+        <div class="cont">
+          <div>
+            <h4>Tom Hanks</h4>
+            <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            </div>
+            <br>
+            <h5>An exceptional coffee, made with love, care and outstanding skill!</h5>
+          </div>
+          <div>
+            <h4>Gica Hagi</h4>
+            <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            </div>
+            <br>
+            <h5>Uneori beau cafea de aici, alteori nu beau deloc.</h5>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <h5>27159</h5>
+            <h4>Cafele facute</h4>
+          </li>
+          <li>
+            <h5>4704</h5>
+            <h4>Clienti fericiti</h4>
+          </li>
+          <li>
+            <h5>5387</h5>
+            <h4>Review-uri primite</h4>
+          </li>
+          <li>
+            <h5>183</h5>
+            <h4>Clienti zilnici</h4>
+          </li>
+        </ul>
+      </section>
+      <%- include('../fragmente/contact')  %>
+      <script>textFade(300)</script>
+      <div class="afk">Ati fost inactiv timp de &nbsp<div class="time"></div> &nbsp minute</div>
+    </main>
+  </body>
+</html>

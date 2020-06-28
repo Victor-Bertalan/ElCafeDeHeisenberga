@@ -2,13 +2,19 @@
 #contact{
   background: rgba(60,0,0,0.8);
   width:100vw;
-  height:20vh;
+  min-height:40vh;
   color:white;
   font-size: 2vw;
   display:flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.f1, .f2{
+
+  width:100vw;
+  text-align: center;
 }
 
 #contact a{

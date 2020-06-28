@@ -1,0 +1,149 @@
+{
+    "lastId": 25,
+    "produse": [
+        {
+            "id": 1,
+            "nume": "Americano",
+            "pret": 5,
+            "tip":"cafea"
+        },
+        {
+            "id": 2,
+            "nume": "Espresso",
+            "pret": 5,
+            "tip":"cafea"
+        },
+        {
+            "id": 3,
+            "nume": "Capuccino",
+            "pret": 7,
+            "tip":"cafea"
+        },
+        {
+            "id": 4,
+            "nume": "Latte",
+            "pret": 7,
+            "tip":"cafea"
+        },
+        {
+            "id": 5,
+            "nume": "Frappe",
+            "pret": 9,
+            "tip":"cafea"
+        },
+        {
+            "id": 6,
+            "nume": "Macchiato",
+            "pret": 7,
+            "tip":"cafea"
+        },
+        {
+            "id": 7,
+            "nume": "Mocha",
+            "pret": 5,
+            "tip":"cafea"
+        },
+        {
+            "id": 8,
+            "nume": "Cold Brew",
+            "pret": 5,
+            "tip":"cafea"
+        },
+        {
+            "id": 9,
+            "nume": "Fructe",
+            "pret": 5,
+            "tip":"ceai"
+        },
+        {
+            "id": 10,
+            "nume": "Mar",
+            "pret": 5,
+            "tip":"ceai"
+        },
+        {
+            "id": 11,
+            "nume": "Portocale",
+            "pret": 6,
+            "tip":"ceai"
+        },
+        {
+            "id": 12,
+            "nume": "Lamaie",
+            "pret": 7,
+            "tip":"ceai"
+        },
+        {
+            "id": 13,
+            "nume": "Earl Gray",
+            "pret": 8,
+            "tip":"ceai"
+        },
+        {
+            "id": 14,
+            "nume": "Menta",
+            "pret": 5,
+            "tip":"ceai"
+        },
+        {
+            "id": 15,
+            "nume": "Tei",
+            "pret": 5,
+            "tip":"ceai"
+        },
+        {
+            "id": 16,
+            "nume": "Verde",
+            "pret": 7,
+            "tip":"ceai"
+        },
+        {
+            "id": 17,
+            "nume": "Cola",
+            "pret": 5,
+            "tip":"suc"
+        },
+        {
+            "id": 18,
+            "nume": "Fanta",
+            "pret": 5,
+            "tip":"suc"
+        },
+        {
+            "id": 19,
+            "nume": "Sprite",
+            "pret": 5,
+            "tip":"suc"
+        },
+        {
+            "id": 20,
+            "nume": "Schweppes",
+            "pret": 6,
+            "tip":"suc"
+        },
+        {
+            "id": 21,
+            "nume": "Nestea",
+            "pret": 6,
+            "tip":"suc"
+        },
+        {
+            "id": 22,
+            "nume": "Apa",
+            "pret": 5,
+            "tip":"suc"
+        },
+        {
+            "id": 23,
+            "nume": "Cappy",
+            "pret": 6,
+            "tip":"suc"
+        },
+        {
+            "id": 24,
+            "nume": "Red Bull",
+            "pret": 9,
+            "tip":"suc"
+        }
+    ]
+}

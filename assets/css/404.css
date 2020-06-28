@@ -1,0 +1,13 @@
+.c404{
+    width:50vw;
+    height: 50vh;
+    top:15vh;
+    left:25vw;
+    position:absolute;
+    background-size: cover;
+}
+
+section{
+    position: absolute;
+    bottom:-10vh;
+}
